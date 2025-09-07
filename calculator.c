@@ -11,7 +11,6 @@ int main(){
     scanf(" %c", &op);
     printf("enter the value of b \n");    
     scanf("%d",&b);
-    printf("select the operator\n");
     // selection of output
 
     switch (op)
