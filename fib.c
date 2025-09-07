@@ -1,18 +1,27 @@
 #include <stdio.h>
 
-// fibonacci sequence the golden ratio
+void printFibonacci(int n) {
+    int a = 0, b = 1, next;
 
-int main(){
-    int n;
-    printf("enter the nth term of fibonacci \n");
-    if (n<2)
-    {
-        return 1;
+    printf("Fibonacci Series (Iterative):\n");
+
+    for (int i = 0; i < n; i++) {
+        printf("%d ", a);
+        next = a + b;
+        a = b;
+        b = next;
     }
-    
-    scanf("%d",&n);
-    printf("%d",(n-1)+(n-2));
 
+    printf("\n");
+}
+
+int main() {
+    int n;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printFibonacci(n);
 
     return 0;
 }
