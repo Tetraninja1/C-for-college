@@ -7,7 +7,7 @@ int main(){
     char op;
     printf("enter the value of a \n");    
     scanf("%d",&a);
-    printf("select the operator(+,-,*,/)\n ");
+    printf("select the operator(+,-,*,/)\n ");  
     scanf(" %c", &op);
     printf("enter the value of b \n");    
     scanf("%d",&b);
