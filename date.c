@@ -2,14 +2,10 @@
 // checking thew condition of dates
 
 int main(){
-    int d,m,y;
-    printf("enter the date\n");
-    scanf("%d",&d);
-    printf("enter the month\n");
-    scanf("%d",&m);
-    printf("enter the year\n");
-    scanf("%d",&y);
-    if (d>1 || d>31 || y<=999 || y>9999 || m<1 || m>12 )
+    int d,m,y,maxdays;
+    printf("enter the date in the format of dd/mm/yyyy\n");
+    scanf("%d%d%d",&d,&m,&y);
+    if (d>1 && d<31 || y>999 && y<=9999 || m>1 && m<12 )
     {
         printf("invalid info\n");
      }else {
@@ -23,6 +19,14 @@ int main(){
     case 8:
     case 10:
     case 12:
+        maxdays=31;
+    break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        maxdays=30;
+        break;
     if (!(d>31))
     {
         printf("invalid info!");
